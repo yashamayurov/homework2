@@ -104,21 +104,4 @@ resource "yandex_compute_instance" "vm2" {
   }
 }
 
-/*
-yc iam service-account create --name my-service-account
-
---------------------------
-
-C:\Users\mayurov>yc iam access-key create --service-account-name my-service-account
-C:\Users\mayurov>yc iam access-key create --service-account-name my-robot
-access_key:
-  id: ajekcgifpfm4lteiijgp
-  service_account_id: ajeh6d5v7pfli2g0eqrj
-  created_at: "2022-07-04T18:56:33.997829665Z"
-  key_id: YCAJEoess5scVbm9ceUYX_uWj
-secret: YCMACOHcvSe6OXG2K0pjZ7p5kbtwazB39Qd0AeN1
-
-
-
-*/
 
