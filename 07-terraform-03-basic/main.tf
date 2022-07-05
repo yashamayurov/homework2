@@ -10,8 +10,8 @@ terraform {
     bucket     = "netobucket1"
     region     = "ru-central1"
     key        = "global/s3/terraform.tfstate"
-    access_key = "YCAJEoess5scVbm9ceUYX_uWj"
-    secret_key = "YCMACOHcvSe6OXG2K0pjZ7p5kbtwazB39Qd0AeN1"
+    access_key = ""
+    secret_key = ""
 
     skip_region_validation      = true
     skip_credentials_validation = true
@@ -25,8 +25,8 @@ provider "yandex" {
 }
 
 resource "yandex_storage_bucket" "netobucket1" {
-  access_key = "YCAJEoess5scVbm9ceUYX_uWj"
-  secret_key = "YCMACOHcvSe6OXG2K0pjZ7p5kbtwazB39Qd0AeN1"
+  access_key = ""
+  secret_key = ""
   bucket = "netobucket1"
 }
 
