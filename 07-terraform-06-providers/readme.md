@@ -9,13 +9,15 @@
 
 #### Ответ:
 resource:
+
 [https://github.com/hashicorp/terraform-provider-aws/blob/341ef9448ff56250ca3ed9d6b69600d42f4251b6/internal/provider/provider.go#L867-L1984](https://github.com/hashicorp/terraform-provider-aws/blob/341ef9448ff56250ca3ed9d6b69600d42f4251b6/internal/provider/provider.go#L867-L1984)
 
 data_source:
+
 [https://github.com/hashicorp/terraform-provider-aws/blob/341ef9448ff56250ca3ed9d6b69600d42f4251b6/internal/provider/provider.go#L412-L865](https://github.com/hashicorp/terraform-provider-aws/blob/341ef9448ff56250ca3ed9d6b69600d42f4251b6/internal/provider/provider.go#L412-L865)
 
 
-1. Для создания очереди сообщений SQS используется ресурс `aws_sqs_queue` у которого есть параметр `name`. 
+2. Для создания очереди сообщений SQS используется ресурс `aws_sqs_queue` у которого есть параметр `name`. 
     * С каким другим параметром конфликтует `name`? Приложите строчку кода, в которой это указано.
     
     name конфликтует с name_prefix. [Cсылка](https://github.com/hashicorp/terraform-provider-aws/blob/6e6e4bed78f29b0addd5b33fd733b67f85bb4dc3/internal/service/sqs/queue.go#L87)
